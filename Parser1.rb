@@ -78,9 +78,8 @@ filelist.each do |spreadsheet|
     results.each do |range, count|
       log.write("#{count} lines found between #{range.first.to_s} and #{range.last.to_s} .\n")
     end
-    
-    log.write("Time elapsed to process this file #{time/60} seconds \n\n")
   end
+  log.write("Time elapsed to process this file #{time} milliseconds \n\n")
   filecount = 0
 end
 
